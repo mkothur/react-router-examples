@@ -11,7 +11,6 @@ export default function Shop({ match }) {
       `https://jsonplaceholder.typicode.com/users?id=${match.params.id}`
     );
     const item = await data.json();
-    console.log(typeof item, item[0].address.city);
     setItem(item[0]);
   };
   return (
